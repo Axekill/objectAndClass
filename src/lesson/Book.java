@@ -1,10 +1,12 @@
 package lesson;
 
-public class Book extends Author {
+public class Book {
     private final String name;
+    Author author;
     private int year;
-    public Book(String name, int year) {
-        super("", "");
+
+    public Book(String name,Author author, int year) {
+        this.author=author;
         this.name = name;
         this.year = year;
     }
